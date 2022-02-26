@@ -2,6 +2,8 @@
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const buttonLogin = document.querySelector('#button-login');
+const buttonForm = document.querySelector('#submit-btn')
+let checkbox = document.querySelector('#agreement')
 
 function loginEnter() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -11,3 +13,10 @@ function loginEnter() {
   }
 }
 buttonLogin.addEventListener('click', loginEnter);
+
+
+function submitButton() {
+  checkbox = checkbox.checked; 
+}
+buttonForm.addEventListener('click', submitButton);
+
