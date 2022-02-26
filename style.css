@@ -9,12 +9,12 @@
 }
 
 main {
-    display: flex;
+    display: flex;  
 }
 
 #evaluation-form {
     width: 675px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
 }
 
