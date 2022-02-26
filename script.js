@@ -18,8 +18,8 @@ function loginEnter() {
 buttonLogin.addEventListener('click', loginEnter);
 
 function submitButton() {
-  const verifyCheckbox = checkbox.checked; 
-  if (verifyCheckbox === true){
+  const verifyCheckbox = checkbox.checked;
+  if (verifyCheckbox === true) {
     buttonForm.disabled = false;
   }
 }
