@@ -2,8 +2,8 @@
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const buttonLogin = document.querySelector('#button-login');
-const buttonForm = document.querySelector('#submit-btn')
-let checkbox = document.querySelector('#agreement')
+const buttonForm = document.querySelector('#submit-btn');
+let checkbox = document.querySelector('#agreement');
 
 function loginEnter() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -14,9 +14,15 @@ function loginEnter() {
 }
 buttonLogin.addEventListener('click', loginEnter);
 
-
+buttonForm.disabled = true;
 function submitButton() {
-  checkbox = checkbox.checked; 
+  const verifyCheckbox = checkbox.checked; 
+  if(verifyCheckbox === true){
+    buttonForm.disabled = false;
+  }
 }
-buttonForm.addEventListener('click', submitButton);
+checkbox.addEventListener('change', submitButton);
+
+
+  
 
