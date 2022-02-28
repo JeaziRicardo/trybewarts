@@ -1,21 +1,91 @@
+* {
+  font-family: Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  height: 70px;
+  align-items: center; /* dúvida align - itens ou align - content */
+}
+
+.trybewarts-header-logo {
+  height: 60px;
+  margin-left: 10px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 10px;
+  align-items: center; /* porque o botão iguala ao meio aqui ? */
+}
+
+.trybewarts-login input , #button-login {
+  display: flex;
+  padding: 5px;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 8px;
+  font-weight: 900;
+  font-size: 16px;
+  border: none;
+}
+
+#button-login {
+  display: flex;
+  background-color: darkslateblue;
+  padding: 22px;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   display: flex;
+  background-color: rgb(231, 231, 231);
+}
+
+#form-title {
+  padding-top: 30px;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+hr {
+  width: 570px;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  width: 280px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#house {
+  width: 249px;
+  background-color: white;
 }
 
 #trybewarts-forms-logo {
