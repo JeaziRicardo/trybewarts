@@ -54,10 +54,10 @@ function subjectsValue() {
   let stringSubjects = '';
   for (let index = 0; index < subjects.length; index += 1) {
     if (subjects[index].checked) {
-      stringSubjects += `${subjects[index].value} `;
+      stringSubjects += `${subjects[index].value}, `;
     }
   }
-  return stringSubjects;
+  return stringSubjects.slice(0, -2); // A função .slice(0, -2) foi ultilizada para remover a vírgula e o espaço depois da última matéria selecionada. Retirada do site: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice#syntax
 }
 
 function rateValue() {
@@ -72,13 +72,13 @@ function rateValue() {
 
 function values() {
   const array = [];
-  array.push(`${'Nome'}: ${inputName.value} ${inputLastName.value}`);
-  array.push(`${'Email'}: ${inputEmail.value}`);
-  array.push(`${'Casa'}: ${house.value}`);
-  array.push(`${'Família'}: ${familyValue()}`);
-  array.push(`${'Matérias'}: ${subjectsValue()}`); // No navegador o retorno está correto, mas não passa no teste.
-  array.push(`${'Avaliação'}: ${rateValue()}`);
-  array.push(`${'Observações'}: ${textArea.value}`);
+  array.push(`Nome: ${inputName.value} ${inputLastName.value}`);
+  array.push(`Email: ${inputEmail.value}`);
+  array.push(`Casa: ${house.value}`);
+  array.push(`Família: ${familyValue()}`);
+  array.push(`Matérias: ${subjectsValue()}`);
+  array.push(`Avaliação: ${rateValue()}`);
+  array.push(`Observações: ${textArea.value}`);
   return array;
 }
 
