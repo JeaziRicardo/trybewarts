@@ -53,33 +53,37 @@
         </section>
         <section id="family-right">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input class="subject" type="checkbox" value="HoFs">HoFs
-          <input class="subject" type="checkbox" value="Jest">Jest
-          <input class="subject" type="checkbox" value="Promises">Promises
-          <input class="subject" type="checkbox" value="React">React
-          <input class="subject" type="checkbox" value="SQL">SQL
-          <input class="subject" type="checkbox" value="Python">Python
+          <section id = "row1">
+            <label><input class="subject" type="checkbox" value="HoFs"> HoFs</label>
+            <label><input class="subject" type="checkbox" value="Jest"> Jest</label>
+            <label><input class="subject" type="checkbox" value="Promises"> Promises </label>
+          </section>
+
+          <section id = "row2">
+            <label><input class="subject" type="checkbox" value="React"> React</label>
+            <label><input class="subject" type="checkbox" value="SQL"> SQL</label>
+            <label><input class="subject" type="checkbox" value="Python"> Python</label>
+          </section>
         </section>
       </section>  
       <hr>
-      <section>
+      <section id = "section-rate">
         <label id = "label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" value="1" name="rate">1
-        <input type="radio" value="2" name="rate">2
-        <input type="radio" value="3" name="rate">3
-        <input type="radio" value="4" name="rate">4
-        <input type="radio" value="5" name="rate">5
-        <input type="radio" value="6" name="rate">6
-        <input type="radio" value="7" name="rate">7
-        <input type="radio" value="8" name="rate">8
-        <input type="radio" value="9" name="rate">9
-        <input type="radio" value="10" name="rate">10
+        <input type="radio" value="1" name="rate"> 1
+        <input type="radio" value="2" name="rate"> 2
+        <input type="radio" value="3" name="rate"> 3
+        <input type="radio" value="4" name="rate"> 4
+        <input type="radio" value="5" name="rate"> 5
+        <input type="radio" value="6" name="rate"> 6
+        <input type="radio" value="7" name="rate"> 7
+        <input type="radio" value="8" name="rate"> 8
+        <input type="radio" value="9" name="rate"> 9
+        <input type="radio" value="10" name="rate"> 10
       </section>
-      <section>
-        <label class = "textarea">Deixe seu comentário:
-          <p id="counter">500</p>
-        </label>
+      <section id = "section-textarea">
+        <label class = "textarea">Deixe seu comentário: </label>
         <textarea id="textarea" maxlength="500" cols="30" rows="10" ></textarea>
+        <p id="counter">500</p>
       </section>
       <section>
         <label id="label-infos">Você concorda com o uso das informações acima?</label>

@@ -52,7 +52,10 @@
 
 main {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(231, 231, 231);
+  padding-right: 400px;
+  align-items: center;
 }
 
 #form-title {
@@ -60,7 +63,6 @@ main {
   display: flex;
   font-size: 30px;
   font-weight: 700;
-
 }
 
 hr {
@@ -73,6 +75,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 
 #input-name , #input-lastname , #input-email , #house {
@@ -84,7 +87,7 @@ hr {
 }
 
 #house {
-  width: 249px;
+  width: 243px;
   background-color: white;
 }
 
@@ -99,9 +102,63 @@ hr {
 #family-left {
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
 }
 
 #family-right {
   display: flex;
   flex-direction: column;
+  padding-left: 80px;
 }
+
+#family-left input {
+  margin-top: 20px;
+}
+
+#family-right input {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#section-rate input {
+  margin-left: 5px;
+}
+
+#section-textarea {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-left: 100px;
+}
+
+#section-textarea .textarea {
+  margin: 10px 0;
+}
+
+#section-textarea #textarea {
+  border: navy solid 1px;
+  padding: 10px;
+  height: 120px;
+  width: 80%;
+}
+
+#agreement {
+  margin-right: 220px;
+}
+
+#submit-btn {
+  background-color: darkslateblue;
+  color: white;
+  width: 85%;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+footer {
+  background-color: rgb(59, 58, 58);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
