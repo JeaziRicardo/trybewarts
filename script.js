@@ -87,6 +87,7 @@ function createParagraph() {
   for (let index = 0; index < values().length; index += 1) {
     const paragraph = document.createElement('p');
     paragraph.innerHTML = values()[index];
+    paragraph.className = 'paragraph';
     form.appendChild(paragraph);
   }
 }

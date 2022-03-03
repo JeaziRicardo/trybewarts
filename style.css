@@ -10,7 +10,7 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   height: 70px;
-  align-items: center; /* dúvida align - itens ou align - content */
+  align-items: center;
 }
 
 .trybewarts-header-logo {
@@ -27,7 +27,7 @@
 .trybewarts-login {
   display: flex;
   margin-right: 10px;
-  align-items: center; /* porque o botão iguala ao meio aqui ? */
+  align-items: center;
 }
 
 .trybewarts-login input , #button-login {
@@ -45,7 +45,7 @@
 #button-login {
   display: flex;
   background-color: darkslateblue;
-  padding: 22px;
+  padding: 18px;
   color: white;
   justify-content: center;
   align-items: center;
@@ -126,8 +126,6 @@ hr {
 }
 
 #section-textarea {
-  display: flex;
-  flex-flow: column nowrap;
   width: 100%;
   margin-left: 100px;
 }
@@ -143,6 +141,13 @@ hr {
   width: 80%;
 }
 
+#counter {
+  position: absolute;
+  color: red;
+  margin-left: 505px;
+  margin-top: 100px;
+}
+
 #agreement {
   margin-right: 220px;
 }
@@ -153,6 +158,11 @@ hr {
   width: 85%;
   margin-top: 10px;
   border-radius: 7px;
+}
+
+.paragraph {
+  text-align: center;
+  line-height: 10px;
 }
 
 footer {
